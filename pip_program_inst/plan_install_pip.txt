@@ -1,0 +1,20 @@
+При помощи PIP установить такие пакеты:
+
+requests (версии 2.26.0);
+pip install requests==2.26.0
+
+lxml (последней версии).
+pip install lxml
+
+Записать установленные зависимости в файл requirements.txt.
+pip freeze > requirements.txt
+
+Удалить эти зависимости и затем установить их из файла requirements.txt.
+pip uninstall requests
+pip uninstall lxml
+or
+pip uninstall -r requirements.txt
+
+pip install -r requirements.txt
+
+Для проверки прислать файл requirements.txt и скриншот выполненных действий.
