@@ -3,7 +3,7 @@ class Auto(object):
     weight = '3 T'
 
 
-    def __init__(self, brand=None, age=0, mark=None):
+    def __init__(self, brand, age, mark):
         self.brand = brand
         self.mark = mark
         self.age = age
@@ -20,7 +20,7 @@ class Auto(object):
 
 class Truck(Auto):
 
-    def __init__(self, brand=None, age=0, mark=None, max_load='attention'):
+    def __init__(self, brand, age, mark, max_load='attention'):
         super().__init__(brand, age, mark)
         self.max_load = max_load
 
@@ -40,12 +40,14 @@ class Car(Auto):
     def move(self):
         super().move()
         print(f"max speed is {self.max_speed}")
-x = Truck()
+
+        
+x = Truck('zz','xx','ss')
 print(x.move())
 
-y = Truck()
+y = Truck('zz','xx','ss')
 
 print(y.load())
 
-c = Car()
+c = Car('zz','xx','ss')
 print(c.move())
