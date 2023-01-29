@@ -4,7 +4,7 @@ class Auto(object):
 
 
 
-    def __init__(self, brand=None, age=0, mark=None):
+    def __init__(self, brand, age, mark):
         self.brand = brand
         self.age = age
         self.mark = mark
