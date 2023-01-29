@@ -45,9 +45,9 @@ class Car(Auto):
 x = Truck('zz','xx','ss', 'max_load')
 print(x.move())
 
-y = Truck('zz','xx','ss', 'max_load')
+y = Truck('zz','xx','ss')
 
 print(y.load())
 
-c = Car('zz','xx','ss', 'max_speed')
+c = Car('zz','xx','ss')
 print(c.move())
