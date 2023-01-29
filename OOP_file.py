@@ -36,7 +36,11 @@ class Truck(Auto):
             print("load")
 
 class Car(Auto):
-    max_speed = '<max_speed>'
+   
+    def __init__(self, brand, age, mark, max_speed='<max_speed>'):
+        super().__init__(brand, age, mark)
+        self.max_speed = max_speed
+    
     def move(self):
         super().move()
         print(f"max speed is {self.max_speed}")
