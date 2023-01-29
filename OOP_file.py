@@ -42,7 +42,7 @@ class Car(Auto):
         print(f"max speed is {self.max_speed}")
 
         
-x = Truck('zz','xx','ss', 'max_load')
+x = Truck('zz','xx','ss')
 print(x.move())
 
 y = Truck('zz','xx','ss')
